@@ -1,0 +1,40 @@
+# \u00BB is » (double >>), ANSI and UTF-8 interpret this differently... you may even see ? due to this
+prefix: "&bGrim &8\u00BB"
+
+alerts-enabled: "%prefix% &fアラートを有効にしました"
+alerts-disabled: "%prefix% &fアラートを無効にしました"
+client-brand-format: "%prefix% &f%player%は%brand%使用してます"
+console-specify-target: "%prefix% &cターゲットをコンソールとして指定する必要があります"
+player-not-found: "%prefix% &cプレイヤーは免除されているかオフラインです!"
+player-not-this-server: "%prefix% &cプレーヤーはこのサーバーにいません"
+spectate-return: "\n%prefix% &f前の場所に戻るには、ここをクリックしてください。\n"
+cannot-spectate-return: "%prefix% &c観戦モード以外のみ可能です"
+
+# 使用可能なプレースホルダー:
+# %prefix%
+# %player%
+# %check_name%
+# %vl% - 違反
+# %verbose% - オフセットなどの追加情報は、すべてのチェックで追加されるわけではありません。
+alerts-format: "%prefix% &f%player% &b無効 &f%check_name% &f(x&c%vl%&f) &7%verbose%"
+
+profile:
+  - "&7======================"
+  - "%prefix% &f%player% &bプロフィール"
+  - "&bPing: &f%ping%"
+  - "&bバージョン: &f%version%"
+  - "&bクライアント: &f%brand%"
+  - "&b水平感度: &f%h_sensitivity%%"
+  - "&b垂直感度: &f%v_sensitivity%%"
+  - "&bFastMath 有効: &f%fast_math%"
+  - "&7======================"
+help:
+  - "&7======================"
+  - "/grim alerts &f- &7アラート切り替え"
+  - "/grim profile &f- &7プレイヤー情報を見る"
+  - "/grim help &f- &7このヘルプメッセージを見る"
+  - "/grim debug <player> &f- &7デバックを出力"
+  - "/grim perf &f- &7ms/予測"
+  - "/grim reload &f- &7コンフィグを再読み込みする"
+  - "/grim spectate <player> &f- &7観戦する"
+  - "&7======================"
